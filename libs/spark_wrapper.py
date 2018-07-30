@@ -154,12 +154,12 @@ def generate_spark_custom_script(args_json):
 
 
 
-    file.write("{0} --force{1}{2}\n".format(sparkcmd,
+    file.write("{0} {1} --force{2}\n".format(sparkcmd,
         args_json['exec_file'],
         tm
     ))
 
-    print "{0} {1}{2}\n".format(sparkcmd,
+    print "{0} {1} --force{2}\n".format(sparkcmd,
         args_json['exec_file'],
         tm
     )
