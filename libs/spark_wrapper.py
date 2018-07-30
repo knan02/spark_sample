@@ -154,7 +154,7 @@ def generate_spark_custom_script(args_json):
 
 
 
-    file.write("{0} {1}{2} --force\n".format(sparkcmd,
+    file.write("{0} --force{1}{2}\n".format(sparkcmd,
         args_json['exec_file'],
         tm
     ))
